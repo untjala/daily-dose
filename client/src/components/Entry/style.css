@@ -1,10 +1,12 @@
 .Entry-root {
   background: #fff;
   border: 1px solid #ddd;
-  font-family: 'Georgia', serif;
+  font-family: 'Red Hat Display', sans-serif;
   font-size: 14px;
   padding: 15px;
   margin-top: 50px;
+  width: 80vw;
+  margin-left: 80px;
 }
 
 .Entry-editor {
@@ -12,6 +14,7 @@
   cursor: text;
   font-size: 16px;
   margin-top: 10px;
+  font-style: italic;
 }
 
 .Entry-editor .public-DraftEditorPlaceholder-root,
@@ -31,7 +34,7 @@
 .Entry-editor .Entry-blockquote {
   border-left: 5px solid #eee;
   color: #666;
-  font-family: 'Hoefler Text', 'Georgia', serif;
+  font-family: 'Red Hat Display', sans-serif;  
   font-style: italic;
   margin: 16px 0;
   padding: 10px 20px;
@@ -39,14 +42,13 @@
 
 .Entry-editor .public-DraftStyleDefault-pre {
   background-color: rgba(0, 0, 0, 0.05);
-  font-family: 'Inconsolata', 'Menlo', 'Consolas', monospace;
+  font-family: 'Red Hat Display', sans-serif;  
   font-size: 16px;
   padding: 20px;
 }
 
 .Entry-controls {
-  font-family: 'Helvetica', sans-serif;
-  font-size: 14px;
+  font-family: 'Red Hat Display', sans-serif;  font-size: 14px;
   margin-bottom: 5px;
   user-select: none;
 }

@@ -72,6 +72,7 @@ class Entry extends React.Component {
     }
 
     return (
+      <div className="Entry-container"> 
       <div className="Entry-root">
         <BlockStyleControls
           editorState={editorState}
@@ -94,6 +95,31 @@ class Entry extends React.Component {
             spellCheck={true}
           />
         </div>
+      </div>
+
+      <div className="Entry-root-two">
+        <BlockStyleControls
+          editorState={editorState}
+          onToggle={this.toggleBlockType}
+        />
+        <InlineStyleControls
+          editorState={editorState}
+          onToggle={this.toggleInlineStyle}
+        />
+        <div className={className} onClick={this.focus}>
+          <Editor
+            blockStyleFn={getBlockStyle}
+            customStyleMap={styleMap}
+            editorState={editorState}
+            handleKeyCommand={this.handleKeyCommand}
+            keyBindingFn={this.mapKeyToEditorCommand}
+            onChange={this.onChange}
+            placeholder="what are you grateful for today?"
+            ref="editor"
+            spellCheck={true}
+          />
+        </div>
+      </div>
       </div>
     );
   }
@@ -143,13 +169,7 @@ const BLOCK_TYPES = [
   { label: 'H1', style: 'header-one' },
   { label: 'H2', style: 'header-two' },
   { label: 'H3', style: 'header-three' },
-  { label: 'H4', style: 'header-four' },
-  { label: 'H5', style: 'header-five' },
-  { label: 'H6', style: 'header-six' },
   { label: 'Blockquote', style: 'blockquote' },
-  { label: 'UL', style: 'unordered-list-item' },
-  { label: 'OL', style: 'ordered-list-item' },
-  { label: 'Code Block', style: 'code-block' },
 ];
 
 const BlockStyleControls = (props) => {

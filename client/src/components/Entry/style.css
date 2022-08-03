@@ -1,3 +1,8 @@
+.Entry-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
 .Entry-root {
   background: #fff;
   border: 1px solid #ddd;
@@ -5,8 +10,16 @@
   font-size: 14px;
   padding: 15px;
   margin-top: 50px;
-  width: 80vw;
-  margin-left: 80px;
+  width: 60%;
+}
+.Entry-root-two {
+  background: #fff;
+  border: 1px solid #ddd;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 14px;
+  padding: 15px;
+  margin-top: 50px;
+  width: 60%;
 }
 
 .Entry-editor {
